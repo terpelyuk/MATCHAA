@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Matcha</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="container header-top">
+
+        <div class="logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+
+        <nav>
+            <a href="#hero">Головна</a>
+            <span>/</span>
+            <a href="#products">Продукти</a>
+            <span>/</span>
+            <a href="#about">Про нас</a>
+            <span>/</span>
+            <a href="#contacts">Контакти</a>
+        </nav>
+
+        <div class="burger-menu">
+            <img src="images/burger.png" alt="menu">
+        </div>
+
+    </div>
+</header>
+
+<div class="mobile-menu">
+
+    <a href="#hero">Головна</a>
+    <a href="#products">Продукти</a>
+    <a href="#about">Про нас</a>
+    <a href="#contacts">Контакти</a>
+
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+    <div class="container hero-wrapper">
+        <p class="subtitle">Магія Матча: Просто лист, без добавок</p>
+        <img src="images/star.png" class="star">
+        <h1 class="title" id="matchaTitle">MATCHA</h1>
+        <img src="images/badge.png" class="badge" id="mainBadge">
+        <div class="glass-wrapper">
+            <img src="images/matcha.png" class="glass">
+        </div>
+        <div class="left-info">
+            <p>
+                Відкрий свій насичений смак і численні
+                переваги для здоров'я, матча містить багато
+                антиоксидантів і може прискорити метаболізм.
+            </p>
+            <button>Купити зараз</button>
+        </div>
+        <div class="right-info">
+        <div class="feature">
+            <img src="images/icon1.jpeg" class="feature-icon" >
+            <p>На 65% менше кислотності</p>
+        </div>
+
+        <div class="feature">
+             <img src="images/icon2.jpeg" class="feature-icon">
+             <p>У 2 рази більше кофеїну</p>
+         </div>
+
+        <div class="feature">
+             <img src="images/icon3.jpeg" class="feature-icon">
+             <p>16 годин настоювання</p>
+         </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+ <section class="matcha-triumph">
+    <h1>Тріумф майстерності з кожним ковтком матчі.</h1>
+    <p class="matcha-subtitle">
+        Незліченні чашки матчі, створені з особливих зусиль, запалюють дух творців, мрійників та досягнень – чистий, яскравий та невпинний – один ковток за раз.
+    </p>
+    <div class="stats-container">
+        <div class="stat">
+            <h2>30k+</h2>
+            <p>Чашки подаються</p>
+        </div>
+        <div class="stat">
+            <h2>80k+</h2>
+            <p>Чашки доставлені</p>
+        </div>
+        <div class="stat">
+            <h2>90k+</h2>
+            <p>Відправлені замовлення</p>
+        </div>
+        <div class="image-container">
+            <img src="images/matcha_cups.webp" alt="Matcha bowls">
+        </div>
+        <div class="avatars">
+            <img src="images/person.png" alt="Person">
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<section class="brewing-section">
+    <div class="container">
+        <h1>Пивоварний Блиск, Заряджає Енергією Мрійників</h1>
+        <h2>– <span>Створено для Тих Хто Завжди Прагне.</span></h2>
+ 
+        <div class="top-section">
+            <div class="matcha-img">
+                <img src="images/Group 2.png" alt="Matcha Cup">
+
+                <img src="images/Vector 6.svg" class="vector-left-top">
+            </div>
+            <p class="top-text">
+                У Green Harmony ми віримо, що матча має бути яскравою, насиченою та безкомпромісною. 
+                Ось чому ми ретельно збиваємо кожну порцію протягом 3 хвилин, розкриваючи м'який, 
+                насичений смак із нульовою гіркотою та максимальним вмістом антиоксидантів.
+            </p>
+
+            <img src="images/Vector 10.svg" class="vector-right-tall">
+        </div>
+
+        <div class="bottom-section">
+
+            <img src="images/Vector 11.svg" class="vector-left-bottom">
+            <div class="cups-img">
+                <img src="images/Group 3.png" alt="Matcha Cups">
+            </div>
+            <p class="bottom-text">
+                Незалежно від того, чи є ви художником, підприємцем або мрійником, 
+                наша матча створена, щоб зарядити енергією вашу творчість і підтримати вашу мету — без нервозності. 
+                <br><br>
+                Неважливо, художник ви, підприємець чи мрійник.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="products-section" id="products">
+    <div class="container">
+        <h1 class="products-heading">
+            Відкрийте для себе ідеальний притулок Matcha: <span class="products-heading-accent">Вибір</span>
+        </h1>
+        <p class="products-subheading">
+            Відкрийте для себе наш асортимент яскравих, вершкових і енергійних напоїв матча, розроблених, щоб задовольнити будь-який смак.
+        </p>
+ 
+        <div class="carousel-wrapper">
+            <div class="carousel-track" id="carouselTrack">
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-btn" id="prevBtn" ><</button>
+                <button class="carousel-btn" id="nextBtn" >></button>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+
+
+
+
+<section class="bottom-banner">
+    <div class="container banner-container">
+
+        <img src="images/vector-left.png" class="banner-vector-left" alt="">
+        <img src="images/vector-right.png" class="banner-vector-right" alt="">
+
+        <img src="images/starwhite.png" class="banner-star" alt="">
+
+        <h1 class="banner-matcha">MATCHA</h1>
+
+        <div class="banner-left-cup">
+            <img src="images/left-cup.png" alt="">
+        </div>
+
+        <div class="banner-text">
+            <p>
+                Незалежно від того, чи ви художник, підприємець чи
+                мислитель за мріями, наша матча створена, щоб
+                активізувати вашу творчість і підтримати вашу увагу
+                без нервозності.
+            </p>
+        </div>
+
+        <div class="banner-badge">
+            <img src="images/badge.png" alt="">
+        </div>
+
+        <div class="banner-right-product">
+            <img src="images/right-product.png" alt="">
+        </div>
+
+        <div class="banner-leaf">
+            <img src="images/leaf.png" alt="">
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+<!-- <section class="matcha-info" id="about">
+
+    <div class="container matcha-info-wrapper">
+
+        <h2 class="matcha-info-title">
+            Наповніть Свій День
+            <span>Яскравою Матчею</span>
+        </h2>
+
+        <img src="images/vector-bg.png" class="matcha-vector" alt="">
+
+
+        <div class="matcha-top">
+
+            <div class="matcha-top-image">
+                <span class="matcha-label top-label">
+                    Яскрава матча
+                </span>
+
+                <img src="images/matcha-bowl.png" alt="">
+            </div>
+
+            <div class="matcha-top-text">
+
+                <p>
+                    Матча — це живий порошок зеленого чаю, який
+                    наповнить ваш день енергією та смаком. Його
+                    глибокий землистий смак чудово доповнює солодощі
+                    або його можна смакувати окремо.
+                </p>
+
+                <p>
+                    Насичена антиоксидантами, матча не тільки піднімає
+                    настрій, але й підвищує концентрацію.
+                </p>
+
+                <p>
+                    Незалежно від того, чи ви збиваєте його до вершкового
+                    латтe чи посипаєте ним десерти, матча привнесе
+                    чарівний відтінок у будь-яку страву!
+                </p>
+
+                <button>Дослідіть зараз</button>
+
+            </div>
+
+        </div>
+
+        <div class="matcha-bottom">
+
+            <div class="matcha-bottom-text">
+
+                <h3>Яскрава матча</h3>
+
+                <p>
+                    Матча — це яскравий порошок зеленого чаю, який принесе
+                    заряд енергії та смаку у ваш день. Його багатий землистий
+                    смак ідеально поєднується з солодощами або ним можна
+                    насолоджуватися самостійно.Наповнений антиоксидантами,
+                    матча не тільки покращує вашнастрій, але й покращує вашу
+                    концентрацію.
+                </p>
+
+                <p>
+                    Незалежно від того, додаєте ви його до пінного латте чи
+                    посипаєте ним десерти, матча додасть чудової родзинки 
+                    будь-якому рецепту. Крім того, він неймовірно універсальний
+                    — спробуйте його в смузі, випічці або навіть пікантних
+                    стравах, щоб отримати несподіваний смак.
+                </p>
+
+                <button>Дослідіть зараз</button>
+
+            </div>
+
+            <div class="matcha-bottom-image">
+
+                <span class="matcha-label bottom-label">
+                    Яскрава матча
+                </span>
+
+                <img src="images/matcha-glass.png" alt="">
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+<section class="reviews-section">
+
+    <div class="container reviews-wrapper">
+
+        <div class="reviews-left">
+
+            <h2 class="reviews-title">
+                <span>ВІДГУКИ</span><br>
+                КЛІЄНТІВ
+            </h2>
+
+            <p class="reviews-subtitle">
+                Це деякі відгуки клієнтів, які задоволені
+                нашими продуктами.
+            </p>
+
+        </div>
+
+        <div class="reviews-cup-left">
+            <img src="images/review-cup.png" alt="">
+        </div>
+
+        <div class="reviews-product">
+            <img src="images/review-product.png" alt="">
+        </div>
+
+        <div class="review-card">
+
+            <div class="review-avatar">
+                <img src="images/client.png" alt="">
+            </div>
+
+            <div class="review-content">
+
+                <div class="quote">❞</div>
+
+                <p>
+                    Я не можу передати вам, як я люблю цей напій.
+                    Я теж захопив усіх своїх колег!
+                    Тропічний пунш поки що мій улюблений смак.
+                </p>
+
+                <h4>М.Андерсон</h4>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+ <footer id="contacts" class="footer">
+
+    <div class="container footer-wrapper">
+
+        <div class="footer-logo">
+
+            <h2>MATCHA</h2>
+
+            <p>
+                Матча — це живий порошок зеленого чаю,
+                який наповнить ваш день енергією та смаком.
+                Його глибокий землистий смак чудово доповнює
+                солодощі або його можна смакувати окремо.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <div class="footer-column">
+                <a href="#">2025 ТОВ</a>
+                <a href="#">Бібліотека/Активи</a>
+                <a href="#">Інвестори</a>
+            </div>
+
+            <div class="footer-column">
+                <a href="#">Ліцензування</a>
+                <a href="#">Умови та політика</a>
+                <a href="#">Політика конфіденційності</a>
+            </div>
+
+            <div class="footer-column">
+                <a href="#">Support@Ghostedtreats.com</a>
+                <a href="#">@Ghosted_treats</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        2025 matcha | Усі права захищено
+    </div>
+
+</footer> -->
+
+    <!-- Інтеграція з JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

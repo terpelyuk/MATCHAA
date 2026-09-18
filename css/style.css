@@ -1,0 +1,2120 @@
+/* FONTS */
+@font-face {
+    font-family: 'IBMPlexSansThaiLooped-SemiBold';
+    src: url('../fonts/IBMPlexSansThaiLooped-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BodoniCustom';
+    src: url('../fonts/BodoniModa[opsz,wght].ttf') format('truetype');
+}
+@font-face {
+    font-family: 'IrishGrover-Regular';
+    src: url('../fonts/IrishGrover-Regular.ttf') format('truetype');
+}
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'IBMPlexSansThaiLooped-SemiBold', sans-serif;
+    background:#FFFFFF;
+}
+
+/* CONTAINER */
+.container{
+    width:1220px;
+    margin:0 auto;
+}
+
+
+/* ACTIVE MENU */
+
+nav a.active{
+    font-weight:700;
+    color:#1F1F1F;
+}
+
+
+header{
+    padding:20px 0;
+}
+
+.header-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* LOGO */
+.logo img{
+    height:50px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+
+/* NAV */
+nav{
+    display:flex;
+    align-items:center;
+    gap:28px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#777774;
+    font-size:16px;
+    font-weight:500;
+    transition:0.1s;
+}
+nav a.active{
+    color:#1F1F1F;
+    font-weight:700;
+}
+
+nav a:hover{
+    color:#1F1F1F;
+    font-weight:600;
+}
+
+nav span{
+    color:#777774;
+}
+
+/* HERO */
+.hero{
+    position:relative;
+    padding-top:40px;
+}
+
+.hero-wrapper{
+    position:relative;
+    text-align:center;
+}
+
+/* SUBTITLE */
+.subtitle{
+    font-family: 'BodoniCustom', sans-serif;
+    color:#7aa36f;
+    font-size:32px;
+    margin-bottom:20px;
+    margin-top: -10px;
+}
+
+/* TITLE */
+.title{
+    font-family: 'BodoniCustom', sans-serif;
+    font-variation-settings: 'wght' 800, 'opsz' 200;
+    font-size:250px;
+    letter-spacing:10px;
+    margin-top:-100px;
+    color:#2b2b2b;
+    position:relative;
+    z-index:1;
+}
+
+/* STAR */
+.star{
+    position:absolute;
+    left:-20px;
+    top:20px;
+    width:100px;
+    z-index:2;
+}
+
+/* BADGE */
+.badge{
+    position:absolute;
+    right:-90px;
+    top:80px;
+    width:176px;
+    z-index:2;
+}
+.badge{
+    transition: transform 0.6s ease;
+}
+
+
+/* GLASS */
+.glass-wrapper{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    margin-top:-250px;
+}
+
+.glass{
+    width:900px;
+    position:relative;
+    z-index:2;
+}
+
+/* LEFT INFO */
+.left-info{
+    position:absolute;
+    left:0;
+    top:550px;
+    width:260px;
+    text-align:left;
+}
+
+.left-info p{
+    font-size:14px;
+    color:#777774;
+    margin-bottom:15px;
+}
+
+.left-info button{
+    background:#2b2b2b;
+    color:white;
+    border:none;
+    padding:16px 36px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.left-info button:hover{
+    background:#6b8e23;
+}
+
+/* RIGHT INFO */
+.right-info{
+    position:absolute;
+    right:0;
+    top:500px;
+    width:260px;
+}
+
+/* FEATURE */
+.feature{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:10px;
+}
+
+.feature img{
+    width:70px;
+    z-index: 5;
+}
+
+
+.feature{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:10px;
+    transition:transform 0.3s ease;
+    cursor:pointer;
+}
+
+
+.feature p{
+    font-size:14px;
+    color:#777774;
+}
+/* FIXED HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+
+
+
+
+
+
+
+.hero {
+    padding-top: 120px; 
+}
+
+.matcha-triumph {
+    text-align: center;
+    padding: 60px 20px 50px;
+}
+
+.matcha-triumph h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #1F1F1F;
+}
+
+.matcha-triumph .matcha-subtitle {
+    font-family: 'IBMPlexSansThaiLooped-SemiBold', sans-serif;
+    font-size: 16px;
+    color: #999;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.stat {
+    flex: 0 1 130px;
+    text-align: left;
+}
+
+.stat h2 {
+    font-size: 28px;
+    margin: 0;
+    color: #1F1F1F;
+    font-family: 'BodoniCustom', sans-serif;
+}
+
+.stat p {
+    margin: 5px 0 0;
+    font-size: 13px;
+    color: #B9B8B6;
+}
+
+.image-container img {
+    width: 280px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.avatars {
+    display: flex;
+    gap: 0;
+    margin-left: 10px;
+}
+
+.avatars img {
+    width: 163px;
+    height: 60px;
+    object-fit: cover;
+}
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: normal;
+    color: #333;
+}
+
+h2 span {
+    color: #4CAF50;
+}
+
+.brewing-section {
+    background: #f2f5ea;
+    padding: 80px 0 20px 0;
+}
+
+.top-section, .bottom-section {
+    display: flex;
+    align-items: center;
+    margin: 60px 0;
+    position: relative;
+    gap: 60px;
+}
+
+/* cups on left, text on right: cups-img comes first in DOM, text second */
+.bottom-section {
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+.matcha-img, .cups-img {
+    position: relative;
+    flex: 0 0 auto;
+    width: 600px;
+    overflow: visible;
+}
+
+.matcha-img > img, .cups-img > img {
+    max-width: 100%;
+    display: block;
+}
+
+.line { display: none; }
+
+/* Vector 6 — decorative squiggle below the matcha image, bottom-center */
+.vector-left-top {
+    position: absolute;
+    left: 240px;
+    bottom: 40px;
+    width: 80px;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.vector-right-tall {
+    position: absolute;
+    right: 180px;
+    top: 0;
+    height: 620px;
+    width: auto;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.vector-left-bottom {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 280px;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.top-text {
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    max-width: 500px;
+    margin-left: -160px;
+}
+
+.bottom-text {
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    max-width: 500px;
+    margin-left: 60px;
+}
+
+
+
+
+
+
+/* Слайдер */
+.products-section {
+    padding: 80px 0 60px;
+    background: #fff;
+}
+
+.products-heading {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1F1F1F;
+    text-align: left;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+.products-heading-accent {
+    color: #366e0c;
+}
+
+.products-subheading {
+    font-size: 14px;
+    color: #aaa;
+    text-align: left;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+}
+
+/* Картка продукту */
+.product-card {
+    flex: 0 0 calc(25% - 15px);
+    min-width: 0;
+    background: #f7f8f3;
+    border-radius: 12px;
+    padding: 24px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-card-name {
+    font-family: 'IBMPlexSansThaiLooped-SemiBold', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1F1F1F;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.product-card-tagline {
+    font-size: 13px;
+    color: #aaa;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.product-card-img-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.product-card-img-wrap img {
+    max-height: 190px;
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+.product-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: 8px;
+}
+
+.product-card-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    color: #888;
+}
+
+.product-card-rating .star-icon {
+    color: #7aa36f;
+    font-size: 15px;
+}
+
+.product-card-price {
+    background: #356d0d;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 6px;
+    letter-spacing: 0.3px;
+    transition: background 0.2s;
+}
+/* Кнопки слайдера */
+.carousel-controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 28px;
+}
+
+.carousel-btn {
+    width: 80px;
+    height: 40px;
+    border: none;
+    background: #ebebeb;
+    font-size: 28px;
+    color: #555;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.carousel-btn:hover {
+    background: #2b2b2b;
+    border-color: #2b2b2b;
+    color: #fff;
+}
+
+.carousel-btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.carousel-btn:disabled:hover {
+    background: #fff;
+    border-color: #ccc;
+    color: #555;
+}
+
+
+
+.bottom-banner{
+    position: relative;
+    background: #366D0D;
+    height: 588px;
+    overflow: hidden;
+}
+
+/* Вектори */
+.banner-vector-left{
+    position:absolute;
+    left:0;
+    top:0;
+    width:344px;
+    opacity:0.25;
+}
+
+.banner-vector-right{
+    position:absolute;
+    right:0;
+    top:0;
+    width:267px;
+    opacity:0.25;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bottom-banner{
+    position:relative;
+    background:#366D0D;
+    overflow:hidden;
+    height:588px;
+}
+
+.banner-container{
+    position:relative;
+    height:100%;
+}
+
+/* MATCHA */
+
+.banner-matcha{
+    font-family:'BodoniCustom', serif;
+    font-size:250px;
+    color:#fff;
+    text-align:center;
+    line-height:1;
+    padding-top:80px;
+    position:relative;
+    z-index:2;
+    letter-spacing:8px;
+}
+
+/* Вектори */
+
+.banner-vector-left{
+    position:absolute;
+    top:-11px;
+    left:-150px;
+    width:360px;
+    opacity:0.18;
+    z-index:1;
+}
+
+.banner-vector-right{
+    position:absolute;
+    top:-15px;
+    right:-150px;
+    width:280px;
+    opacity:0.18;
+    z-index:1;
+}
+
+/* Зірочка */
+
+.banner-star{
+    position:absolute;
+    top:80px;
+    left:-10px;
+    width:55px;
+    z-index:3;
+}
+
+/* Стакан */
+
+.banner-left-cup{
+    position:absolute;
+    left:-120px;
+    bottom:0;
+    z-index:4;
+}
+
+.banner-left-cup img{
+    width:586px;
+    display:block;
+}
+
+/* Листок */
+
+.banner-leaf{
+    position:absolute;
+    left:-150px;
+    bottom:-10px;
+    z-index:5;
+}
+
+.banner-leaf img{
+    width:279px;
+}
+
+/* Текст */
+
+.banner-text{
+    position:absolute;
+    right:200px;
+    top:370px;
+    width:493px;
+    z-index:4;
+}
+
+.banner-text p{
+    color:#A8ACA6;
+    font-size:15px;
+    line-height:2.0;
+}
+
+/* Велика емблема */
+
+.banner-badge{
+    position:absolute;
+    right:-60px;
+    top:290px;
+    z-index:5;
+}
+
+.banner-badge img{
+    width:273px;
+}
+
+/* Маленький продукт */
+
+.banner-right-product{
+    position:absolute;
+    right:-80px;
+    bottom:-40px;
+    z-index:4;
+}
+
+.banner-right-product img{
+    width:159px;
+}
+
+
+
+
+
+
+
+.matcha-info{
+    background:#FFFFFF;
+    padding:143px 0;
+    height: 1435px;
+    overflow:hidden;
+}
+
+.matcha-info-wrapper{
+    position:relative;
+}
+
+.matcha-info-title{
+    text-align:center;
+    font-size:45px;
+    margin-bottom:90px;
+    color:#29292A;
+    font-weight:550;
+}
+
+.matcha-info-title span{
+    color:#396F0E;
+}
+
+/* Вектор */
+.matcha-vector{
+    position:absolute;
+    top:120px;
+    left:50%;
+    transform:translateX(-50%);
+    width:100%;
+    max-width:1026px;
+    z-index:5;
+    pointer-events:none;
+}
+
+/* Блоки */
+.matcha-top,
+.matcha-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:relative;
+    z-index:2;
+}
+
+.matcha-bottom{
+    margin-top:100px;
+}
+
+/* ФОТО */
+.matcha-top-image{
+    width:460px;
+    transform: translate(100px, 10px);
+}
+
+.matcha-bottom-image{
+    width:451px;
+    transform: translate(-125px, -10px);
+}
+
+.matcha-top-image img,
+.matcha-bottom-image img{
+    width:100%;
+    display:block;
+}
+
+/* ТЕКСТ */
+.matcha-top-text,
+.matcha-bottom-text{
+    width:40%;
+}
+
+.matcha-top-text{
+    transform: translateX(0px);
+}
+
+.matcha-bottom-text{
+    transform: translate(150px, -90px);
+}
+
+/* ПАРАГРАФИ */
+.matcha-top-text p,
+.matcha-bottom-text p{
+    font-size:15px;
+    color:#6D6A6A;
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+/* ЗАГОЛОВКИ h3 */
+.matcha-top-text h3,
+.matcha-bottom-text h3{
+    font-size:35px;
+    color:#121212;
+    margin-bottom:80px;
+}
+.matcha-bottom-text h3{
+    transform: translate(50px, 80px);
+}
+
+/* Кнопка */
+.matcha-top-text button,
+.matcha-bottom-text button{
+    background:#000;
+    color:#fff;
+    border:none;
+    padding:16px 38px;
+    cursor:pointer;
+    margin-top:10px;
+    transition:.3s;
+}
+
+.matcha-top-text button:hover,
+.matcha-bottom-text button:hover{
+    background:#366D0D;
+}
+
+/* Написи у кутах */
+.matcha-label{
+    position:absolute;
+    font-size:20px;
+    color:#121212;
+    font-weight:600;
+}
+
+.top-label{
+    top:-30px;
+    left:20px;
+}
+
+.bottom-label{
+    top:-50px;
+    right:0px;
+}
+
+
+
+
+
+/* ====================================
+   REVIEWS SECTION
+==================================== */
+
+.reviews-section{
+    background:#F7FDF4;
+    height:709px;
+    overflow:hidden;
+    position:relative;
+    padding-top:90px;
+}
+
+.reviews-wrapper{
+    position:relative;
+    height:100%;
+}
+
+/* Заголовок */
+
+.reviews-left{
+    width:360px;
+}
+
+.reviews-title{
+    font-size:82px;
+    line-height:0.9;
+    font-weight:800;
+    color:#282929;
+}
+
+.reviews-title span{
+    color:#366D0D;
+}
+
+.reviews-subtitle{
+    margin-top:20px;
+    color:#A8ACA6;
+    font-size:18px;
+    line-height:1.6;
+}
+
+/* Лівий стакан */
+
+.reviews-cup-left{
+    position:absolute;
+    left:-150px;
+    bottom:0;
+}
+
+.reviews-cup-left img{
+    width:220px;
+    display:block;
+}
+
+/* Центральний продукт */
+.reviews-product{
+    position:absolute;
+    left:340px;
+    top:260px;
+}
+
+.reviews-product img{
+    width:260px;
+    display:block;
+}
+
+/* Велике зелене коло */
+.review-card{
+    position:absolute;
+    right:40px;
+    top:-10px;
+
+    width:520px;
+    height:520px;
+
+    background:#366D0D;
+    border-radius:50%;
+}
+
+/* Фото клієнта */
+.review-avatar{
+    position:absolute;
+    right:15px;
+    top:-20px;
+}
+
+.review-avatar img{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+/* Контент відгуку */
+
+.review-content{
+    height:100%;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    padding:80px;
+}
+
+.quote{
+    font-size:90px;
+    color:#fff;
+    line-height:1;
+    margin-bottom:10px;
+}
+
+.review-content p{
+    color:#fff;
+    font-size:20px;
+    line-height:1.8;
+}
+
+.review-content h4{
+    margin-top:25px;
+    color:#D8E7CB;
+    font-size:20px;
+    font-weight:600;
+}
+
+/* ====================================
+   FOOTER
+==================================== */
+
+.footer{
+    background:#366D0D;
+    height:355px;
+    overflow:hidden;
+}
+
+.footer-wrapper{
+    height:300px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* Логотип та опис */
+.footer-logo{
+    width:420px;
+}
+
+.footer-logo h2{
+    font-family:'BodoniCustom', serif;
+    font-size:78px;
+    color:#fff;
+    line-height:1;
+    margin-bottom:20px;
+    text-align:left;
+}
+
+.footer-logo p{
+    color:#E4F3D1;
+    font-size:15px;
+    line-height:1.8;
+}
+
+/* Посилання */
+.footer-links{
+    display:flex;
+    gap:80px;
+}
+
+.footer-column{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.footer-column a{
+    text-decoration:none;
+    color:#E4F3D1;
+    font-size:15px;
+    transition:0.3s;
+}
+
+.footer-column a:hover{
+    opacity:0.7;
+}
+
+/* Нижня смуга */
+.footer-bottom{
+    height:55px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#E4F3D1;
+    font-size:14px;
+
+    background:rgba(0,0,0,0.08);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================
+   TABLET 768
+===================================== */
+
+.burger-menu{
+    display:none;
+}
+
+@media screen and (max-width:768px){
+
+    .container{
+        width:calc(100% - 120px);
+        max-width:none;
+    }
+
+    /* HEADER */
+
+    header{
+        padding:10px 0;
+    }
+
+    .header-top{
+        justify-content:space-between;
+    }
+
+    .logo img{
+        width:145px;
+        height:auto;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .burger-menu{
+        display:block;
+        cursor:pointer;
+    }
+
+    .burger-menu img{
+        width:40px;
+        display:block;
+    }
+
+    /* HERO */
+
+    .hero{
+        padding-top:40px;
+    }
+
+    .hero-wrapper{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    /* SUBTITLE */
+
+    .subtitle{
+        font-size:clamp(22px,4vw,30px);
+        margin-top:40px;
+        margin-bottom:15px;
+    }
+
+    /* TITLE */
+
+    .title{
+        font-size:clamp(90px,18vw,135px);
+        letter-spacing:4px;
+        margin-top:0;
+        line-height:0.9;
+    }
+
+    /* STAR */
+
+    .star{
+        width:clamp(50px,8vw,85px);
+        left:-35px;
+        top:80px;
+    }
+
+    /* BADGE */
+
+    .badge{
+        width:clamp(70px,14vw,125px);
+        right: -55px;
+        top: 110px;
+    }
+
+    /* LEFT INFO */
+
+    .left-info{
+        position:static;
+        width:100%;
+        max-width:700px;
+        text-align:center;
+        order:2;
+
+        margin-top:20px;
+    }
+
+    .left-info p{
+        font-size:clamp(16px,3vw,25px);
+        line-height:1.2;
+
+        margin:0 auto 20px;
+    }
+
+    .left-info button{
+        width:170px;
+        height:55px;
+
+        padding:0;
+
+        font-size:20px;
+    }
+
+    /* GLASS */
+
+    .glass-wrapper{
+        position:static;
+        order:3;
+
+        display:flex;
+        justify-content:center;
+
+        margin-top:40px;
+    }
+
+    .glass{
+        width:min(100%,550px);
+        height:auto;
+    }
+
+    /* RIGHT INFO */
+
+    .right-info{
+        position:static;
+        order:4;
+
+        width:100%;
+        max-width:200px;
+
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:25px;
+
+        margin-top:-350px;
+        margin-left: 550px;
+    }
+
+    /* FEATURE */
+
+    .feature{
+        width:220px;
+
+        display:flex;
+        align-items:center;
+
+        gap:10px;
+
+        margin-bottom:0;
+    }
+
+    .feature img{
+        width:50px;
+        flex-shrink:0;
+    }
+
+    .feature p{
+        font-size:clamp(14px,2vw,20px);
+        line-height:1.3;
+        text-align:left;
+    }
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   TABLET 768 - 1024
+===================================== */
+
+@media screen and (max-width:768px){
+
+
+
+    .matcha-triumph{
+        padding:50px 20px 40px;
+        margin-top: 100px;
+    }
+
+    .matcha-triumph h1{
+        font-size:28px;
+        line-height:1.3;
+        margin-bottom:10px;
+    }
+
+    .matcha-triumph .matcha-subtitle{
+        font-size:18px;
+        max-width:700px;
+        margin-bottom:35px;
+    }
+
+    /* Статистика */
+
+    .stats-container{
+        max-width:760px;
+        justify-content:center;
+        gap:20px;
+        flex-wrap:nowrap;
+    }
+
+    .stat{
+        flex:0 0 auto;
+        text-align:center;
+    }
+
+    .stat h2{
+        font-size:28px;
+    }
+
+    .stat p{
+        font-size:18px;
+        line-height:1.2;
+    }
+
+    /* Фото людей */
+
+    .image-container{
+        display:none;
+    }
+
+    .avatars{
+        margin-left:0;
+    }
+
+    .avatars img{
+        width:160px;
+        height:auto;
+    }
+
+
+
+
+
+
+    
+
+
+
+    .brewing-section{
+        padding:60px 20px 20px;
+    }
+
+    .brewing-section h1,h2{
+        font-size:25px;
+        line-height:1.3;
+    }
+
+    .top-section,
+    .bottom-section{
+        gap:30px;
+        margin:40px 0;
+    }
+
+    /* Основний текст */
+
+    .top-text,
+    .bottom-text{
+        font-size:17px;
+        line-height:1.6;
+        max-width:350px;
+    }
+
+    .top-text{
+        margin-left:60px;
+    }
+
+    .bottom-text{
+        margin-left: -100px;
+    }
+
+
+    .matcha-img{
+        width:160px;
+        
+    }
+
+    .cups-img{
+        width:360px;
+        transform: rotate(-90deg);
+        right: 100px;
+        top: 20px;
+    }
+
+
+  
+    .vector-left-top{
+        width:90px;
+        left:75px;
+        bottom:15px;
+    }
+
+    .vector-right-tall{
+        height:550px;
+        right:10px;
+        top: -20px;
+    }
+
+    .vector-left-bottom{
+        width:170px;
+        top:10px;
+        top: -30px;
+    }
+}
+
+
+
+
+
+
+/* =====================================
+   PRODUCTS + BANNER 768px
+===================================== */
+
+@media screen and (max-width:768px) and (min-width:385px){
+
+    /* PRODUCTS */
+
+    .products-heading{
+        font-size:30px;
+        line-height:1.2;
+        max-width:700px;
+        margin:0 auto 20px;
+        text-align:center;
+    }
+
+    .products-subheading{
+        font-size:17px;
+        line-height:1.5;
+        max-width:650px;
+        margin:0 auto 35px;
+        text-align:center;
+    }
+
+    /* показуємо лише 3 картки */
+
+    .carousel-track{
+        gap:20px;
+    }
+
+    .product-card{
+        width:320px;
+    }
+
+    .product-card:nth-child(4){
+        display:none;
+    }
+
+    .product-card h3{
+        font-size:17px;
+    }
+
+    .product-card p{
+        font-size:17px;
+    }
+
+    .product-price{
+        font-size:17px;
+    }
+    .product-card:nth-child(4){
+        display:none;
+    }
+
+    /* BANNER */
+
+    .bottom-banner{
+        overflow:hidden;
+        height: 320px;
+    }
+
+    .banner-container{
+        min-height:420px;
+        position:relative;
+    }
+
+    .banner-matcha{
+        font-size:125px;
+        line-height:1;
+        left: 20px;
+        top: -40px;
+    }
+    
+    .banner-text{
+        position:absolute;
+        left:270px;
+        top:180px;
+        width:280px;
+    }
+
+    .banner-text p{
+        font-size:17px;
+        line-height:1.2;
+        
+    }
+
+    /* Кава зліва */
+
+    .banner-left-cup{
+        position:absolute;
+        left:20px;
+        bottom:0;
+    }
+
+    .banner-left-cup img{
+        width:269px;
+        transform: translateX(-20px) translateY(-100px);
+    }
+
+    /* Листок на каві */
+
+    .banner-leaf{
+        position:absolute;
+        left:-70px;
+        top: 200px;
+        bottom:130px;
+        z-index:5;
+    }
+
+    .banner-leaf img{
+        width:143px;
+        height:auto;
+    }
+
+    /* Емблема */
+
+    .banner-badge{
+        position:absolute;
+        right:90px;
+        bottom:80px;
+        z-index:5;
+    }
+
+    .banner-badge img{
+        width: 146px;
+        height: auto;
+        transform: translateY(-100px) translateX(100px);
+    }
+
+    /* Стакан під емблемою */
+
+    .banner-right-product{
+        position:absolute;
+        right:-20px;
+        top: 220px;
+        bottom:0;
+    }
+
+    .banner-right-product img{
+        width:81px;
+        height:auto;
+    }
+
+    /* Вектори */
+
+    .banner-vector-left{
+        position:absolute;
+        left:-70px;
+        top:0;
+        width:178px;
+        height: 192px;
+    }
+
+    .banner-vector-right{
+        position:absolute;
+        right: -50px;
+        top:0;
+        width:147px;
+        height:250px;
+    }
+
+    .banner-star{
+        width: 50px;
+        left: 5px;
+        top: 30px;
+    }
+
+    .product-card {
+        flex: 0 0 calc(33% - 15px);
+        min-width: 0;
+        background: #f7f8f3;
+        border-radius: 12px;
+        padding: 24px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 368px){
+
+    /* HEADER */
+
+    header{
+        height: 80px;
+        padding:0;
+    }
+
+    .container{
+        width:100%;
+        padding:0 8px;
+    }
+
+    .header-top{
+        height:57px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    .logo img{
+        width:120px;
+        margin-top: 40px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .burger-menu{
+        display:block;
+    }
+
+    .burger-menu img{
+        width:30px;
+        margin-right: 10px;
+
+    }
+
+    /* MOBILE MENU */
+    .mobile-menu{
+        display:none;
+        flex-direction:row;
+        justify-content:center;
+        gap:15px;
+        padding:12px 0;
+        background:#fff;
+    }
+
+    .mobile-menu.active{
+        display:flex;
+    }
+
+    .mobile-menu a{
+        text-decoration:none;
+        color:#777774;
+        font-size:12px;
+    }
+
+    /* HERO */
+
+    .hero{
+        padding-top:20px;
+    }
+
+    .hero-wrapper{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    /* Зірочка */
+
+    .star{
+        width:38px;
+        margin-top: 0;
+        margin-left: 40px;
+    }
+
+    /* MATCHA */
+
+    .title{
+        font-size:64px;
+        line-height:1;
+        letter-spacing:2px;
+        margin-top: 90px;
+        order:1;
+    }
+
+    /* Підзаголовок */
+
+    .subtitle{
+        order:2;
+        font-size:20px;
+        line-height:1.3;
+        text-align:center;
+        margin: 5px 0 20px;
+        max-width:320px;
+    }
+
+    /* Прибираємо емблему */
+
+    .badge{
+        display:none;
+    }
+
+    /* Стакан */
+
+    .glass-wrapper{
+        order:3;
+        margin:0;
+    }
+
+    .glass{
+        width:341px;
+        max-width:100%;
+        margin-top: 0px;
+        display:block;
+    }
+
+    /* Лівий блок */
+
+    .left-info{
+        order:4;
+
+        position:static;
+
+        width:100%;
+        text-align:center;
+    }
+
+    .left-info p{
+        font-size:15px;
+        line-height:1.5;
+        max-width:320px;
+        margin: 0 auto 15px;
+        z-index: 10;
+    }
+
+    .left-info button{
+        width:158px;
+        height:51px;
+        font-size:14px;
+        border:none;
+        background:#2b2b2b;
+        color:#fff;
+        cursor:pointer;
+    }
+
+    /* Ховаємо праві іконки */
+
+    .right-info{
+        display:none;
+    }
+}
+
+
+@media screen and (max-width: 368px){
+
+    /* SECTION 2 */
+
+    .matcha-triumph{
+        padding:50px 10px;
+        text-align:center;
+    }
+
+    .matcha-triumph h1{
+        font-size:24px;
+        line-height:1.2;
+        margin-bottom:10px;
+    }
+
+    .matcha-triumph .matcha-subtitle{
+        font-size:15px;
+        line-height:1.4;
+        max-width:348px;
+        margin:0 auto 20px;
+    }
+
+    .stats-container{
+        display:flex;
+        justify-content:space-between;
+        align-items:flex-start;
+        flex-wrap:nowrap;
+        gap:1;
+        width:348px;
+        margin:0 auto;
+        padding:0;
+    }
+
+    .stat{
+        flex:1;
+        text-align:center;
+    }
+
+    .stat h2{
+        font-size:24px;
+        margin:0;
+    }
+
+    .stat p{
+        font-size:12px;
+        line-height:1.3;
+        margin-top:5px;
+    }
+
+    .image-container{
+        width:300px;
+        margin:0 auto 0;
+    }
+
+    .image-container img{
+        display:none;
+    }
+
+    .avatars{
+        display:flex;
+        justify-content:center;
+        margin:10px auto 0;
+    }
+    
+    .avatars img{
+        width:100px;
+        height:auto;
+        display:block;
+        margin-left: -50px;
+    }
+
+
+
+    /* SECTION 3 */
+
+    .brewing-section{
+        padding:30px 10px 20px;
+    }
+
+    .brewing-section h1,h2{
+        font-size:24px;
+        line-height:1.3;
+        max-width:340px;
+        margin:0 auto 20px;
+    }
+
+
+    .top-section{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+        margin:30px 0;
+    }
+
+    .matcha-img{
+        width:150px;
+        margin-left: 150px;
+        top: 180px;
+        position:relative;
+    }
+
+    .matcha-img > img{
+        width:150px;
+        display:block;
+        margin:0 auto;
+    }
+
+    .top-text{
+        font-size:15px;
+        line-height:1.6;
+        max-width:340px;
+        margin-top: -150px;
+        margin-left: 10px;
+    }
+
+    .bottom-section{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        order: 1;
+        gap:20px;
+        margin-top:130px;
+        margin-left: 50px;
+    }
+
+    .cups-img{
+        width:348px;
+        order: 2;
+        margin-top: -50px;
+        margin-left: 150px;
+        transform: rotate(0deg);
+    }
+
+    .cups-img > img{
+        width:348px;
+        display:block;
+    }
+
+    .bottom-text{
+        font-size:15px;
+        line-height:1.6;
+        max-width:340px;
+        margin:0;
+        text-align:left;
+    }
+
+    /* ВЕКТОРИ */
+
+    .vector-left-top{
+        width:94px;
+        height:97px;
+        left:40px;
+        bottom:10px;
+    }
+
+    .vector-right-tall{
+        height: 500px;
+        right:-10px;
+        top:-20px;
+    }
+
+    .vector-left-bottom{
+       display: none;
+    }
+}
+
+
+
+
+@media screen and (max-width: 368px){
+
+    /* PRODUCTS */
+
+    .products-section{
+        padding:30px 10px;
+    }
+
+    .products-heading{
+        font-size:24px;
+        line-height:1.2;
+        text-align:center;
+        margin-bottom:10px;
+    }
+
+    .products-subheading{
+        font-size:17px;
+        line-height:1.3;
+        text-align:center;
+        max-width:340px;
+        margin:0 auto 20px;
+    }
+
+    .carousel-wrapper{
+        width:100%;
+        overflow:hidden;
+    }
+
+    /* показуємо тільки один товар */
+
+    .carousel-track{
+        justify-content:center;
+    }
+
+    .product-card{
+        width:340px;
+        margin:0 auto;
+    }
+
+    .product-card img{
+        max-width:160px;
+        height:auto;
+    }
+
+    .carousel-controls{
+        margin-top:15px;
+        justify-content:center;
+    }
+
+    .carousel-btn{
+        width:55px;
+        height:35px;
+    }
+
+    /* GREEN BANNER */
+
+    .bottom-banner{
+        height:400px;
+        overflow:hidden;
+    }
+
+    .banner-container{
+        position:relative;
+        height:400px;
+        padding:0;
+    }
+
+    /* MATCHA */
+
+    .banner-matcha{
+        font-size:60px;
+        line-height:0.9;
+        position:absolute;
+        left:25px;
+        transform: translateY(-30px);
+        z-index:2;
+    }
+
+    /* STAR */
+
+    .banner-star{
+        width:35px;
+        position:absolute;
+        top:35px;
+        left:5px;
+        z-index:3;
+    }
+
+    /* TEXT */
+
+    .banner-text{
+        position:absolute;
+        left:20px;
+        top:130px;
+        width: 330px;
+        z-index:3;
+    }
+
+    .banner-text p{
+        font-size:17px;
+        line-height:1.2;
+    }
+
+    /* ЕМБЛЕМИ НЕМАЄ */
+
+    .banner-badge{
+        display:none;
+    }
+
+    /* ЛІВА КАВА */
+
+    .banner-left-cup{
+        position:absolute;
+        left: 30px;
+        bottom:0;
+        z-index:2;
+    }
+
+    .banner-left-cup img{
+        width:220px;
+        height:auto;
+    }
+
+    /* ЛИСТОК */
+
+    .banner-leaf{
+        position:absolute;
+        left:-15px;
+        z-index:4;
+    }
+
+    .banner-leaf img{
+        width:120px;
+        height:auto;
+    }
+
+    /* ПРАВИЙ СТАКАН ПРИБРАТИ */
+
+    .banner-right-product{
+        display:none;
+    }
+
+    /* ВЕКТОРИ */
+
+    .banner-vector-left{
+        position:absolute;
+        left:0;
+        bottom:0;
+        width:166px;
+        height:auto;
+    }
+
+    .banner-vector-right{
+        position:absolute;
+        right:0;
+        top:0;
+        width:254px;
+        height:auto;
+    }
+    .product-card {
+        flex: calc(100% - 15px);
+        min-width: 300px;
+    }
+}
+
+
